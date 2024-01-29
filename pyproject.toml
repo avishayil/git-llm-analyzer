@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "git-llm-analyzer"
+version = "0.1.0"
+description = "Use Langchain to Read GitHub Repositories"
+authors = ["Avishay Bar <avishayil@users.noreply.github.com>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "*"
+langchain_community = "*"
+python-dotenv = "*"
+nltk = "*"
+scikit-learn = "*"
+rank-bm25 = "*"
+unstructured = {extras = ["md"], version= "*"}
+pandas = "*"
+
+[tool.poetry.dev-dependencies]
+black = "==22.6.0"
+isort = "==5.11.5"
+flake8 = "==4.0.1"
+flake8-docstrings = "==1.6.0"
+coverage = "*"
+yamllint = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
